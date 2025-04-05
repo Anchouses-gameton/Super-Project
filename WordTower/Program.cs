@@ -1,20 +1,16 @@
-﻿
-
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.IO;
-    using WordTower;
-    using System.Linq;
-    using System.Text.Encodings.Web;
-    using System.Text.Json;
-    using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 
 namespace WordTower
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
             try
             {
@@ -46,16 +42,15 @@ namespace WordTower
                     ids = placedIds,
                     placements = placements.Select(p => new
                     {
-                        word = p.Word,
                         id = p.Id,
-                        direction = p.Direction,
-                        start = p.Start
+                        pos = p.Start,
+                        word = p.Word,
+                        dir = p.Direction
                     }),
                     score
                 };
 
                 // 4. Настройка путей
-                string projectDir = Directory.GetCurrentDirectory();
                 string visualizerDir = "C:\\Users\\_Noble_IGO_\\Source\\Repos\\Super-Project\\WordTower\\dats_city_front-main\\";
                 string outputDataPath = Path.Combine(visualizerDir, "public", "data", "tower_data.json");
 
@@ -68,12 +63,12 @@ namespace WordTower
                 };
 
                 Directory.CreateDirectory(Path.GetDirectoryName(outputDataPath));
-                await File.WriteAllTextAsync(outputDataPath, JsonSerializer.Serialize(visualizerData, jsonOptions));
+                File.WriteAllText(outputDataPath, JsonSerializer.Serialize(visualizerData, jsonOptions));
 
                 Console.WriteLine($"Данные сохранены: {outputDataPath}");
 
                 // 6. Запуск визуализатора
-                await StartVisualizerAsync(visualizerDir);
+                StartVisualizer(visualizerDir);
             }
             catch (Exception ex)
             {
@@ -84,9 +79,8 @@ namespace WordTower
             Console.ReadKey();
         }
 
-        private static async Task StartVisualizerAsync(string visualizerDir)
+        private static void StartVisualizer(string visualizerDir)
         {
-            Process serverProcess = null;
             try
             {
                 string packageJsonPath = Path.Combine(visualizerDir, "package.json");
@@ -99,13 +93,25 @@ namespace WordTower
                 Console.WriteLine("Запуск визуализатора...");
 
                 // Установка зависимостей
-                await RunNpmCommandAsync(visualizerDir, "install");
+                RunNpmCommand(visualizerDir, "install");
 
-                // Запуск сервера и получение Process
-                serverProcess = await RunNpmCommandAsync(visualizerDir, "start", false);
+                // Запуск сервера
+                var serverProcess = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = "cmd.exe",
+                        Arguments = $"/C cd /D \"{visualizerDir}\" && npm start",
+                        WorkingDirectory = visualizerDir,
+                        UseShellExecute = false,
+                        CreateNoWindow = true,
+                        RedirectStandardOutput = true
+                    }
+                };
+                serverProcess.Start();
 
                 // Даем серверу время на запуск
-                await Task.Delay(3000);
+                System.Threading.Thread.Sleep(3000);
 
                 // Открываем браузер
                 Process.Start(new ProcessStartInfo
@@ -116,56 +122,40 @@ namespace WordTower
 
                 Console.WriteLine("Сервер визуализации запущен. Нажмите Enter для завершения...");
                 Console.ReadLine();
+
+                if (!serverProcess.HasExited)
+                {
+                    serverProcess.Kill();
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ошибка при запуске визуализатора: {ex.Message}");
             }
-            finally
-            {
-                // Завершаем процесс если он запущен
-                if (serverProcess != null && !serverProcess.HasExited)
-                {
-                    serverProcess.Kill();
-                    serverProcess.Dispose();
-                }
-            }
         }
 
-        private static async Task<Process> RunNpmCommandAsync(string workingDir, string command, bool waitForExit = true)
+        private static void RunNpmCommand(string workingDir, string command)
         {
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = "npm",
-                    Arguments = command,
+                    FileName = "cmd.exe",
+                    Arguments = $"/C cd /D \"{workingDir}\" && npm {command}",
                     WorkingDirectory = workingDir,
                     UseShellExecute = false,
                     CreateNoWindow = true,
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true
+                    RedirectStandardOutput = true
                 }
             };
 
-            var tcs = new TaskCompletionSource<bool>();
-
-            process.Exited += (sender, args) =>
-            {
-                tcs.TrySetResult(true);
-                process.Dispose();
-            };
-
             process.Start();
+            process.WaitForExit();
 
-            if (waitForExit)
+            if (process.ExitCode != 0)
             {
-                await tcs.Task;
+                throw new Exception($"Команда 'npm {command}' завершилась с ошибкой (код {process.ExitCode})");
             }
-
-            return process;
         }
-
-        // Остальные классы (TowerBuilder, WordPlacement и др.) остаются без изменений
     }
 }

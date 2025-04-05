@@ -91,434 +91,434 @@
   ],
   "placements": [
     {
-      "word": "арбуз",
       "id": 1,
-      "direction": 2,
-      "start": [
+      "pos": [
         0,
         0,
         0
-      ]
+      ],
+      "word": "арбуз",
+      "dir": 2
     },
     {
-      "word": "земляника",
       "id": 8,
-      "direction": 2,
-      "start": [
+      "pos": [
         4,
         0,
         0
-      ]
+      ],
+      "word": "земляника",
+      "dir": 2
     },
     {
-      "word": "арка",
       "id": 32,
-      "direction": 2,
-      "start": [
+      "pos": [
         12,
         0,
         0
-      ]
+      ],
+      "word": "арка",
+      "dir": 2
     },
     {
-      "word": "карниз",
       "id": 35,
-      "direction": 2,
-      "start": [
+      "pos": [
         14,
         0,
         0
-      ]
+      ],
+      "word": "карниз",
+      "dir": 2
     },
     {
-      "word": "банан",
       "id": 2,
-      "direction": 3,
-      "start": [
+      "pos": [
         2,
         0,
         0
-      ]
+      ],
+      "word": "банан",
+      "dir": 3
     },
     {
-      "word": "ежевика",
       "id": 6,
-      "direction": 3,
-      "start": [
+      "pos": [
         5,
         0,
         0
-      ]
+      ],
+      "word": "ежевика",
+      "dir": 3
     },
     {
-      "word": "инжир",
       "id": 9,
-      "direction": 3,
-      "start": [
+      "pos": [
         10,
         0,
         0
-      ]
+      ],
+      "word": "инжир",
+      "dir": 3
     },
     {
-      "word": "киви",
       "id": 11,
-      "direction": 3,
-      "start": [
+      "pos": [
         11,
         0,
         0
-      ]
+      ],
+      "word": "киви",
+      "dir": 3
     },
     {
-      "word": "лимон",
       "id": 12,
-      "direction": 3,
-      "start": [
+      "pos": [
         7,
         0,
         0
-      ]
+      ],
+      "word": "лимон",
+      "dir": 3
     },
     {
-      "word": "малина",
       "id": 13,
-      "direction": 3,
-      "start": [
+      "pos": [
         6,
         0,
         0
-      ]
+      ],
+      "word": "малина",
+      "dir": 3
     },
     {
-      "word": "нектарин",
       "id": 14,
-      "direction": 3,
-      "start": [
+      "pos": [
         9,
         0,
         0
-      ]
+      ],
+      "word": "нектарин",
+      "dir": 3
     },
     {
-      "word": "рябина",
       "id": 17,
-      "direction": 3,
-      "start": [
+      "pos": [
         1,
         0,
         0
-      ]
+      ],
+      "word": "рябина",
+      "dir": 3
     },
     {
-      "word": "крыша",
       "id": 27,
-      "direction": 3,
-      "start": [
+      "pos": [
         14,
         0,
         0
-      ]
+      ],
+      "word": "крыша",
+      "dir": 3
     },
     {
-      "word": "вишня",
       "id": 3,
-      "direction": 3,
-      "start": [
+      "pos": [
         11,
         2,
         0
-      ]
+      ],
+      "word": "вишня",
+      "dir": 3
     },
     {
-      "word": "женьшень",
       "id": 7,
-      "direction": 1,
-      "start": [
+      "pos": [
         5,
         1,
         0
-      ]
+      ],
+      "word": "женьшень",
+      "dir": 1
     },
     {
-      "word": "орех",
       "id": 15,
-      "direction": 1,
-      "start": [
+      "pos": [
         7,
         3,
         0
-      ]
+      ],
+      "word": "орех",
+      "dir": 1
     },
     {
-      "word": "тыква",
       "id": 19,
-      "direction": 1,
-      "start": [
+      "pos": [
         9,
         3,
         0
-      ]
+      ],
+      "word": "тыква",
+      "dir": 1
     },
     {
-      "word": "лестница",
       "id": 28,
-      "direction": 1,
-      "start": [
+      "pos": [
         7,
         0,
         0
-      ]
+      ],
+      "word": "лестница",
+      "dir": 1
     },
     {
-      "word": "балка",
       "id": 29,
-      "direction": 1,
-      "start": [
+      "pos": [
         2,
         0,
         0
-      ]
+      ],
+      "word": "балка",
+      "dir": 1
     },
     {
-      "word": "колонна",
       "id": 30,
-      "direction": 1,
-      "start": [
+      "pos": [
         11,
         0,
         0
-      ]
+      ],
+      "word": "колонна",
+      "dir": 1
     },
     {
-      "word": "купол",
       "id": 33,
-      "direction": 1,
-      "start": [
+      "pos": [
         14,
         0,
         0
-      ]
+      ],
+      "word": "купол",
+      "dir": 1
     },
     {
-      "word": "веранда",
       "id": 39,
-      "direction": 1,
-      "start": [
+      "pos": [
         5,
         3,
         0
-      ]
+      ],
+      "word": "веранда",
+      "dir": 1
     },
     {
-      "word": "мансарда",
       "id": 40,
-      "direction": 1,
-      "start": [
+      "pos": [
         6,
         0,
         0
-      ]
+      ],
+      "word": "мансарда",
+      "dir": 1
     },
     {
-      "word": "бульбозаврикус",
       "id": 42,
-      "direction": 1,
-      "start": [
+      "pos": [
         1,
         2,
         0
-      ]
+      ],
+      "word": "бульбозаврикус",
+      "dir": 1
     },
     {
-      "word": "живопрометус",
       "id": 43,
-      "direction": 1,
-      "start": [
+      "pos": [
         10,
         2,
         0
-      ]
+      ],
+      "word": "живопрометус",
+      "dir": 1
     },
     {
-      "word": "слива",
       "id": 18,
-      "direction": 1,
-      "start": [
+      "pos": [
         1,
         2,
         -13
-      ]
+      ],
+      "word": "слива",
+      "dir": 1
     },
     {
-      "word": "стена",
       "id": 22,
-      "direction": 1,
-      "start": [
+      "pos": [
         10,
         2,
         -11
-      ]
+      ],
+      "word": "стена",
+      "dir": 1
     },
     {
-      "word": "пол",
       "id": 25,
-      "direction": 1,
-      "start": [
+      "pos": [
         14,
         0,
         -2
-      ]
+      ],
+      "word": "пол",
+      "dir": 1
     },
     {
-      "word": "груша",
       "id": 4,
-      "direction": 2,
-      "start": [
+      "pos": [
         1,
         6,
         0
-      ]
+      ],
+      "word": "груша",
+      "dir": 2
     },
     {
-      "word": "дыня",
       "id": 5,
-      "direction": 2,
-      "start": [
+      "pos": [
         7,
         7,
         0
-      ]
+      ],
+      "word": "дыня",
+      "dir": 2
     },
     {
-      "word": "йогурт",
       "id": 10,
-      "direction": 2,
-      "start": [
+      "pos": [
         13,
         0,
         -3
-      ]
+      ],
+      "word": "йогурт",
+      "dir": 2
     },
     {
-      "word": "персик",
       "id": 16,
-      "direction": 2,
-      "start": [
+      "pos": [
         12,
         1,
         0
-      ]
+      ],
+      "word": "персик",
+      "dir": 2
     },
     {
-      "word": "фейхоа",
       "id": 20,
-      "direction": 2,
-      "start": [
+      "pos": [
         4,
         1,
         -1
-      ]
+      ],
+      "word": "фейхоа",
+      "dir": 2
     },
     {
-      "word": "фундамент",
       "id": 21,
-      "direction": 2,
-      "start": [
+      "pos": [
         3,
         1,
         -2
-      ]
+      ],
+      "word": "фундамент",
+      "dir": 2
     },
     {
-      "word": "окно",
       "id": 23,
-      "direction": 2,
-      "start": [
+      "pos": [
         3,
         1,
         -6
-      ]
+      ],
+      "word": "окно",
+      "dir": 2
     },
     {
-      "word": "дверь",
       "id": 24,
-      "direction": 2,
-      "start": [
+      "pos": [
         3,
         1,
         -5
-      ]
+      ],
+      "word": "дверь",
+      "dir": 2
     },
     {
-      "word": "потолок",
       "id": 26,
-      "direction": 2,
-      "start": [
+      "pos": [
         0,
         2,
         -5
-      ]
+      ],
+      "word": "потолок",
+      "dir": 2
     },
     {
-      "word": "перекрытие",
       "id": 31,
-      "direction": 2,
-      "start": [
+      "pos": [
         10,
         2,
         -4
-      ]
+      ],
+      "word": "перекрытие",
+      "dir": 2
     },
     {
-      "word": "фасад",
       "id": 34,
-      "direction": 2,
-      "start": [
+      "pos": [
         3,
         7,
         0
-      ]
+      ],
+      "word": "фасад",
+      "dir": 2
     },
     {
-      "word": "парапет",
       "id": 36,
-      "direction": 2,
-      "start": [
+      "pos": [
         13,
         4,
         0
-      ]
+      ],
+      "word": "парапет",
+      "dir": 2
     },
     {
-      "word": "фронтон",
       "id": 37,
-      "direction": 2,
-      "start": [
+      "pos": [
         8,
         5,
         0
-      ]
+      ],
+      "word": "фронтон",
+      "dir": 2
     },
     {
-      "word": "эркер",
       "id": 38,
-      "direction": 2,
-      "start": [
+      "pos": [
         4,
         3,
         -2
-      ]
+      ],
+      "word": "эркер",
+      "dir": 2
     },
     {
-      "word": "синхрофазотрон",
       "id": 41,
-      "direction": 2,
-      "start": [
+      "pos": [
         5,
         2,
         -3
-      ]
+      ],
+      "word": "синхрофазотрон",
+      "dir": 2
     }
   ],
   "score": 3.3249999999999997
