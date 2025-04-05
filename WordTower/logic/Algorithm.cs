@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WordTower
+namespace WordTower.logic
 {
-    class TowerBuilder
+    class Algorithm
     {
+        
     }
 }

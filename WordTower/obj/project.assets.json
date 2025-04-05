@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Donald Dunn\\.nuget\\packages\\": {},
+    "C:\\Users\\_Noble_IGO_\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\C# proj\\Console\\Super-Project\\WordTower\\WordTower.csproj",
+      "projectUniqueName": "C:\\Users\\_Noble_IGO_\\Source\\Repos\\Super-Project\\WordTower\\WordTower.csproj",
       "projectName": "WordTower",
-      "projectPath": "P:\\C# proj\\Console\\Super-Project\\WordTower\\WordTower.csproj",
-      "packagesPath": "C:\\Users\\Donald Dunn\\.nuget\\packages\\",
-      "outputPath": "P:\\C# proj\\Console\\Super-Project\\WordTower\\obj\\",
+      "projectPath": "C:\\Users\\_Noble_IGO_\\Source\\Repos\\Super-Project\\WordTower\\WordTower.csproj",
+      "packagesPath": "C:\\Users\\_Noble_IGO_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\_Noble_IGO_\\Source\\Repos\\Super-Project\\WordTower\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Donald Dunn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\_Noble_IGO_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

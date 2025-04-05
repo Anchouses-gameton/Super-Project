@@ -1,0 +1,15 @@
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\bin\Debug\net9.0\WordTower.exe
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\bin\Debug\net9.0\WordTower.deps.json
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\bin\Debug\net9.0\WordTower.runtimeconfig.json
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\bin\Debug\net9.0\WordTower.dll
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\bin\Debug\net9.0\WordTower.pdb
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.AssemblyInfoInputs.cache
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.AssemblyInfo.cs
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.csproj.CoreCompileInputs.cache
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.sourcelink.json
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.dll
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\refint\WordTower.dll
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.pdb
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\WordTower.genruntimeconfig.cache
+C:\Users\_Noble_IGO_\Source\Repos\Super-Project\WordTower\obj\Debug\net9.0\ref\WordTower.dll
