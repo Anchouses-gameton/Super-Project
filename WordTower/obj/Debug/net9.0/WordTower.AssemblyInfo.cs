@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordTower")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f44697ff9e0bbf8fcd6b3df34e09cc42694281b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b49e66ac21d6c1ab01d9f23b773c3d15a8997ac5")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordTower")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordTower")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

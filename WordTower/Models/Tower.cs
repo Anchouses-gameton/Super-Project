@@ -2,6 +2,6 @@
 
 public class Tower
 {
-    public int Score { get; set; }
-    public List<BuiltWord> Words { get; set; }
+    public double Score { get; set; }
+    public List<BuildWord>? Words { get; set; }
 }
