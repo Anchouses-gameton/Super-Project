@@ -133,21 +133,32 @@ namespace WordTower
 
             if (a.Direction == 2) // X direction
             {
-                if (a.Start[1] == b.Start[1] && a.Start[2] == b.Start[2] &&
-                    Math.Abs(a.Start[0] - b.Start[0]) < minDistance)
-                    return true;
+                if (a.Start[1] == b.Start[1] && a.Start[2] == b.Start[2])
+                {
+                    int aEnd = a.Start[0] + a.Word.Length;
+                    int bEnd = b.Start[0] + b.Word.Length;
+                    // Проверка перекрытия с учетом минимального расстояния
+                    return (a.Start[0] < bEnd + minDistance) && (aEnd + minDistance > b.Start[0]);
+                }
             }
             else if (a.Direction == 3) // Y direction
             {
-                if (a.Start[0] == b.Start[0] && a.Start[2] == b.Start[2] &&
-                    Math.Abs(a.Start[1] - b.Start[1]) < minDistance)
-                    return true;
+                if (a.Start[0] == b.Start[0] && a.Start[2] == b.Start[2])
+                {
+                    int aEnd = a.Start[1] + a.Word.Length;
+                    int bEnd = b.Start[1] + b.Word.Length;
+                    return (a.Start[1] < bEnd + minDistance) && (aEnd + minDistance > b.Start[1]);
+                }
             }
             else if (a.Direction == 1) // Z direction
             {
-                if (a.Start[0] == b.Start[0] && a.Start[1] == b.Start[1] &&
-                    Math.Abs(a.Start[2] - b.Start[2]) < minDistance)
-                    return true;
+                if (a.Start[0] == b.Start[0] && a.Start[1] == b.Start[1])
+                {
+                    int aEnd = a.Start[2] - a.Word.Length; // Направление вглубь (Z уменьшается)
+                    int bEnd = b.Start[2] - b.Word.Length;
+                    // Для Z учитываем обратный порядок
+                    return (a.Start[2] > bEnd - minDistance) && (aEnd - minDistance < b.Start[2]);
+                }
             }
 
             return false;
@@ -211,8 +222,15 @@ namespace WordTower
             if (words.Count != ids.Count)
                 throw new ArgumentException("Количество слов и ID должно совпадать");
 
-            this.words = new List<string>(words);
-            this.ids = new List<int>(ids);
+            // Сортируем слова и ID вместе, сохраняя соответствие
+            var combined = words.Zip(ids, (word, id) => new { Word = word, Id = id })
+                               .OrderBy(x => x.Word.Length)  // Сортировка по длине слова
+                               .ThenBy(x => x.Word)          // Доп. сортировка по алфавиту при равной длине
+                               .ToList();
+
+            // Разделяем обратно на отсортированные списки
+            this.words = combined.Select(x => x.Word).ToList();
+            this.ids = combined.Select(x => x.Id).ToList();
             this.fieldSize = fieldSize;
         }
 
