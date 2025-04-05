@@ -1,16 +1,9 @@
-﻿
-
-
-
-
-
-
-//ОНО РАБОТАЕТ!!! ПРАВДА СЛОВА В КОНСОЛЬКУ ПОЛЗУТ
+﻿////ОНО РАБОТАЕТ!!! ПРАВДА СЛОВА В КОНСОЛЬКУ ПОЛЗУТ
 //class Program
 //{
 //    static async Task Main()
 //    {
-//        const string apiKey = "103c71b6-1d24-40df-8d62-eb8cc1e451d8"; // Ваш реальный ключ
+//        const string apiKey = "апи"; // Ваш реальный ключ
 //        const string apiUrl = "https://games-test.datsteam.dev/api/words";
 
 //        var handler = new HttpClientHandler();
@@ -64,7 +57,7 @@ public static class GameServerClient
 {
     private static readonly HttpClient _client = new HttpClient();
     private static GameState _gameState = new GameState();
-    const string ApiKey = "103c71b6-1d24-40df-8d62-eb8cc1e451d8";
+    const string ApiKey = "апи";
     public const string BaseUrl = "https://games-test.datsteam.dev/api";
 
     public static async Task Main()
