@@ -2,11 +2,7 @@
 using WordTower;
 using Newtonsoft.Json;
 
-<<<<<<< HEAD
 var token = "токен";
-=======
-var token = "апи";
->>>>>>> 7c30727 (пофиксил запросы к апи, начал тестить алг для построения башни)
 var client = new GameClient("https://games-test.datsteam.dev", token);
 
 try
@@ -27,11 +23,10 @@ try
     var ids = Enumerable.Range(0, wordStrings.Count).ToList(); // Создаем ID от 0 до N-1
     var fieldSize = (wordsResponse.MapSize[0], wordsResponse.MapSize[1]); // (ширина, глубина)
 
-<<<<<<< HEAD
-// Получаем информацию о башнях
-var towersResponse = await client.GetTowersAsync();
-Console.WriteLine($"Всего башен: {towersResponse.CompletedTowers.Count}");
-=======
+    // Получаем информацию о башнях
+    var towersResponse = await client.GetTowersAsync();
+    Console.WriteLine($"Всего башен: {towersResponse.CompletedTowers.Count}");
+
     // 3. Создаем и используем TowerBuilder
     var builder = new TowerBuilder(wordStrings, ids, fieldSize);
 
@@ -65,4 +60,3 @@ catch (Exception ex)
 {
     Console.WriteLine($"Ошибка: {ex.Message}");
 }
->>>>>>> 7c30727 (пофиксил запросы к апи, начал тестить алг для построения башни)
