@@ -1,7 +1,7 @@
 ﻿using WordTower.Models;
 using WordTower;
 
-var token = "103c71b6-1d24-40df-8d62-eb8cc1e451d8";
+var token = "токен";
 var client = new GameClient("https://games-test.datsteam.dev", token);
 
 // Получаем слова
